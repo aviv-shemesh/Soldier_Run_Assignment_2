@@ -1,28 +1,36 @@
-🏃‍♂️ Soldier Run - Assignment 2 (Upgraded Version)
-This is the second phase of the Soldier Run project. This version introduces advanced UI components, data persistence, and location-based features.
+# 🏃‍♂️ Soldier Run - Assignment 2
 
-✨ What's New in Assignment 2:
-High Scores System: Persistent storage of the top 10 highest scores using SharedPreferences.
+### 🎓 Android Development Course Project (2025) - Afeka College
+An upgraded, fast-paced survival game where the soldier must dodge falling berets and collect coins to reach the top of the leaderboard.
 
-Fragments Integration: The high scores screen is divided into two interactive fragments:
+---
 
-List Fragment: Displays a sorted leaderboard with names and scores.
+## 🚀 Key Features - Assignment 2 Upgrades
 
-Map Fragment: Integrates Google Maps API to show markers at the locations where high scores were achieved.
+This version introduces advanced logic and UI components as per assignment requirements:
 
-Interactive UI: Clicking on a score in the list automatically focuses the map on that specific location with a smooth zoom.
+* **🏆 Global Leaderboard**: Persistent storage of the top 10 highest scores achieved.
+* **🧩 Multi-Fragment UI**: Implementation of two dynamic fragments within the High Scores screen:
+    * **List View**: A detailed, sorted list of players and their scores.
+    * **Map View**: Google Maps integration displaying locations where records were set.
+* **📍 Interactive Map Navigation**: Clicking the map icon in the score list triggers an automatic camera zoom to the specific location on the map.
+* **👤 Name Personalization**: A Game Over dialog allows players to enter and save their names to the record table.
+* **🛰 Real-World GPS**: Capturing real-time coordinates using the Fused Location Provider.
+* **📳 Haptic Feedback**: Enhanced user experience with vibration effects upon collision.
 
-User Personalization: Added a "Game Over" dialog for players to enter their names before saving scores.
+---
 
-Haptic Feedback: Integrated vibration effects upon obstacle collision to improve the gaming experience.
+## 🛠 Tech Stack & Tools
+* **Language**: Kotlin
+* **Architecture**: Fragments, RecyclerView, Material Design
+* **Storage**: SharedPreferences (JSON parsing via GSON)
+* **Maps**: Google Maps SDK for Android
+* **Location**: Google Play Services (Location)
 
-Real GPS Integration: Uses FusedLocationProvider to capture the player's real-world coordinates.
+---
 
-🛠 Tech Stack
-Language: Kotlin
-
-APIs: Google Maps SDK, Fused Location Provider
-
-UI: Fragments, RecyclerView, Material Design
-
-Persistence: SharedPreferences (JSON via GSON)
+## ⚙️ How to Run
+1. Clone the repository.
+2. Open in Android Studio.
+3. Add your `MAPS_API_KEY` to `local.properties`.
+4. Run on an Emulator or Physical Device.
